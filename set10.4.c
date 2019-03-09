@@ -2,18 +2,21 @@
 #include<conio.h>
 void main()
 {
-    int a[100],i,j,n,count=0;
+    int n,rem,a[100],i=0,j,k,count=0;
     clrscr();
     scanf("%d",&n);
-    for(i=0;i<n;i++)
+    while(n>0)
     {
-        scanf("%d",&a[i]);
+        rem=n%10;
+        a[i]=rem;
+        n=n/10;
+        i++;
     }
-    for(i=0;i<n;i++)
+    for(j=0;j<i;j++)
     {
-        for(j=i+1;j<n;j++)
+        for(k=0;k<i;k++)
         {
-            if(a[i]==a[j])
+            if(a[j]==a[k])
             {
                 count++;
             }
