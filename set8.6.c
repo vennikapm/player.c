@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a[100],i,temp1,temp2,ce=0,co=0,n;
+clrscr();
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+scanf("%d",&a[i]);
+}
+for(i=0;i<n;i++)
+{
+if(a[i]%2==0)
+{
+ce++;
+temp1=a[i];
+}
+else
+{
+co++;
+temp2=a[i];
+}
+}
+if(ce==1)
+{
+printf("%d",temp1);
+}
+else
+{
+printf("%d",temp2);
+}
+getch();
+}
