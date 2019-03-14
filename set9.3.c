@@ -10,7 +10,7 @@ void main()
 	}
 	for(i=0;i<n;i++)
 	{
-         res=(a[i])|(a[j]);
+         res=res|a[i];
      
      }
 	printf("%d",res);
