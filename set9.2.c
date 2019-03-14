@@ -1,7 +1,7 @@
 #include <stdio.h>
 void main() 
 {
-	int n,a[100],i,count=1,max=0,res,j;
+	int n,a[100],i,count=1,max=0,res=0,j;
 	scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
@@ -10,19 +10,12 @@ void main()
 	}
 	for(i=0;i<n;i++)
 	{
-     for(j=i+1;j<n;j++)
-     {
-         res=(a[i])&(a[j]);
+     
+         res=res&a[i];
      
      }
-	}
-	if(n==1)
-	{
-	    printf("%d",a[0]);
-	}
-	else
-	{
+	
+
 	printf("%d",res);
-	}
 	getch();
 }
