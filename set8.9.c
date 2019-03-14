@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a[100],i,n,j,max=0,diff;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        for(j=i+1;j<n;j++)
+        {
+            if(a[i]>a[j])
+            {
+            diff=a[i]-a[j];
+            }
+            else
+            {
+                diff=a[j]-a[i];
+            }
+        }
+        if(diff>max)
+        {
+            max=diff;
+        }
+    }
+    printf("%d",max);
+    getch();
+}
