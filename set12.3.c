@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include<string.h>
-int main()
+#include<conio.h>
+void main()
 {
 	char a[20];
 	scanf("%s",a);
@@ -27,5 +27,5 @@ int main()
 		printf("no");
 	}
 	
-	return 0;
+	getch();
 }
