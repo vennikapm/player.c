@@ -15,7 +15,6 @@ int main()
     
     }
     a[k]='\0';
-    printf("%s",a);
     for(k=0;k<i+j;k++)
     {
         for(m=0;c[m]!='\0';m++)
