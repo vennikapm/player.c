@@ -1,0 +1,33 @@
+#include<stdio.h>
+void main()
+{
+    int a[100][100],i,j,sum=0,sum2=0,n,pro;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            if(i==j)
+            {
+                sum=sum+a[i][j];
+            }
+        }
+    }
+    for(i=0;i<n;i++)
+    {
+        for(j=n-1-i;j>=0;j--)
+        {
+            sum2=sum2+a[i][j];
+            break;
+        }
+    }
+    pro=sum*sum2;
+    printf("%d",pro);
+}
